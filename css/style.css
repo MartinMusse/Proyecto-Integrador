@@ -189,6 +189,7 @@ h3{
 /*******footer*****/
 footer{
     color: var(--color-quinto);
+    background-color: var(--color-secundario);
 }
 
 footer img{
@@ -262,10 +263,12 @@ footer h3{
 #contacto{
     margin-top: 1rem;
     font-size: 15px;
+    
 
 }
 .contacto{
     color: var(--color-cuarto);
+    
 }
 
 /* derechos */
@@ -281,6 +284,14 @@ footer h3{
 /*Responsive*/
 @media (max-width: 768px) {
     /*tablets */
+
+    h1, .logo{
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 2rem;
+        margin: 0px;
+        width: 50%;
+    }
    #quienes-somos, #por-que-elegirnos, #propuesta-educativa{
     flex-wrap: wrap;
    
@@ -294,11 +305,14 @@ footer h3{
     background-color: var(--color-principal);
   }
   
+  .contacto{
+    background-color: var(--color-secundario);
+  }
     
 }
 
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 320px) {
   /*Smartphones */
   nav>ul{
     flex-wrap: wrap;
