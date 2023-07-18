@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>UntrefSchool</title>
+</head>
+<body>
+    <header>    
+        <img class="logo" src="/img/logo.png">
+        <img class="menu" src="/img/menu.png">
+        <div>
+            <h1> Untref School</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Volver</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="formulario">
+            
+            <form action="/procesar_formulario" method="post">
+                <h2>Formulario de Contacto</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+        
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <br>
+        
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+        
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <br>
+                
+                <textarea name="Comentario" id="comentario" rows="6">Escribe aqui...</textarea>
+                <br>
+                <input class="enviar" type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <article>
+                    <div class="redes">
+                        <p><img src="/img/facebook.png">www.untrefschool.com</p>
+                        <p><img src="/img/instagram.png">Untref_School</p>
+                        <p><img src="/img/twitter.png">Untref School</p>
+                    </div>
+            </article>
+            <article>
+                <img class="logo" src="/img/logo.png" alt="">
+            </article>
+            <article>
+                <p class="contacto">Dirección:&nbsp Av Corrientes 4565, Caba.</p>
+                <p class="contacto">Email:&nbsp  contacto@untrefscool.com</p>
+                <p class="contacto">Teléfono:&nbsp  011-45611654</p>
+            </article>
+        </div>
+
+        <section class="derechos">
+            Todos los derechos reservados Untref School
+        </section>
+    </footer>
+</body>
+</html>
