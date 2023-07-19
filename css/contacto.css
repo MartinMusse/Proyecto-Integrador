@@ -13,6 +13,7 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--color-cuarto);
 }
 
 /****Header****/
@@ -29,10 +30,12 @@ header{
 }
 .menu{
     display: none;
+    
 }
 h1{
     color: var(--color-secundario);
-    font-size: 5rem;
+    font-size: 4rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 /*nav*/
@@ -53,46 +56,36 @@ nav ul li a{
     gap: 1rem;
 }
 
-
-
 /*main*/
 main{
-    background-image: url(/img/contacto.jpg);
+    background-image: url(../img/contacto.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50rem;
+    height: auto;
 }
-
 h2{
-    gap: 50px;
-    margin-top: 5rem;
+    gap: 10px;
+    margin-top: 1rem;
     text-align: center;
-    color: var(--color-quinto);
-    
-    margin: 0;
+    color: var(--color-terceario);
 }
-
 .formulario{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    
-
+    color:var(--color-terceario)
 }
-
-
 form {
-    background-color: rgba(255, 255, 255, 0.5); 
-    padding: 30px;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 label,
 input {
     font-size: 1.5rem;
@@ -103,10 +96,8 @@ input {
 textarea{
     height: 97px;
     width: 353px;
-
 }
 input, textarea {
-   
     color: var(--color-secundario);
     border: none;
     padding: 10px 20px;
@@ -121,7 +112,7 @@ input, textarea {
 }
 .enviar{
     margin-top: 2rem;
-    background-color: var(--color-quinto);
+    background-color: var(--color-terceario);
     justify-content: center;
 }
 
@@ -129,11 +120,8 @@ input[type="submit"]:hover {
     background-color: var(--color-terceario);
 }
 
-
-
 /*******footer*****/
 footer{
-    height: 8rem;
     color: var(--color-quinto);
     background-color: var(--color-secundario);
 }
@@ -161,23 +149,43 @@ footer p{
     align-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    
 }
 
 .info{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .logo{
     width: 10rem;
 }
-
 .derechos{
     display: flex;
-    margin-top: 18px;
     justify-content: space-around;
     background-color: var(--color-cuarto);
     color: var(--color-secundario);
+}
+
+
+/*responsive*/
+@media screen and (max-width: 768px){
+     /*tablets */
+    
+    h1{
+        font-size: 2rem;
+        display: flex;
+    }
+
+    nav{
+        display: none;
+    }
+
+    
+    main{
+        flex-wrap: wrap;
+    }
+
+    article{
+        font-size: 1rem;
+    }
 }
