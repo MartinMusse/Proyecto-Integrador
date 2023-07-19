@@ -10,6 +10,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0;
+   
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -65,7 +66,6 @@ main{
     height: auto;
 }
 h2{
-    gap: 10px;
     margin-top: 1rem;
     text-align: center;
     color: var(--color-terceario);
@@ -73,13 +73,10 @@ h2{
 .formulario{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
     color:var(--color-terceario)
 }
 form {
-    
     background-color: rgba(255, 255, 255, 0.5); 
     padding: 20px;
     max-width: 300px;
@@ -170,22 +167,46 @@ footer p{
 /*responsive*/
 @media screen and (max-width: 768px){
      /*tablets */
-    
+   
     h1{
         font-size: 2rem;
         display: flex;
     }
-
     nav{
         display: none;
     }
-
-    
     main{
         flex-wrap: wrap;
+        size-adjust: auto;
     }
+    .formulario{
+        align-items: center;
+    }
+ 
+}
 
-    article{
-        font-size: 1rem;
+
+@media screen and (max-width: 460px) {
+    /*Smartphones */
+    h1{
+      font-size: 2rem;
+    }
+    .redes{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+    .formulario{
+      
+      align-items: center;
+    }
+    .derechos{
+      font-size: 0.7rem;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+
     }
 }
+ 
