@@ -42,6 +42,14 @@ header{
     color: var(--color-quinto);
 }
 
+.checkbtn{
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
 /*****main****/
 
 main{
@@ -233,6 +241,14 @@ footer h3{
     color: var(--color-quinto);
     
 }
+.contacto-footer{
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--color-cuarto);
+}
+.click-aqui{
+    font-size: 0.7rem;
+}
 
 /* derechos */
 .derechos{
@@ -245,12 +261,13 @@ footer h3{
 /*Responsive*/
 @media (max-width: 768px) {
     /*tablets */
-    
-    .abrir-menu{
+
+    .checkbtn{
         display: block;
-        width: 2rem;
+        
+                
     }
-    nav{
+    nav ul li{
         display: none;
     }
     h1{
