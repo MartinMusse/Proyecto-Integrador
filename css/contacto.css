@@ -27,7 +27,7 @@ header{
     background-color: var(--color-cuarto);
 }
 .logo{
-    max-width: 5rem;
+    max-width: 8rem;
 }
 .menu{
     display: none;
@@ -152,6 +152,7 @@ footer p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .logo{
     width: 10rem;
@@ -202,6 +203,7 @@ footer p{
     }
     .derechos{
       font-size: 0.7rem;
+      height: 1rem;
     }
     .info{
         display: flex;
