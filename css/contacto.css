@@ -170,12 +170,11 @@ footer p{
      /*tablets */
    
     h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
         display: flex;
+
     }
-    nav{
-        display: none;
-    }
+  
     main{
         flex-wrap: wrap;
         size-adjust: auto;
@@ -190,7 +189,8 @@ footer p{
 @media screen and (max-width: 460px) {
     /*Smartphones */
     h1{
-      font-size: 2rem;
+      font-size: 2.5rem;
+      margin: 0px;
     }
     .redes{
       display: flex;
